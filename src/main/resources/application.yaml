@@ -1,0 +1,14 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: Rest-template-client
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8090/eureka
+  instance:
+    hostname: localhost
